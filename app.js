@@ -34,6 +34,11 @@ const numbers = document.querySelectorAll('.number')
 
 numbers.forEach((number) => {
     number.addEventListener('click', (event) => {
+        if(isDone) {
+            currNumber = '0'
+            prevNumber = ''
+            isDone = false
+        }
         inputNumber(event.target.value)
         updateScreen(currNumber)
         console.log(event.target.value)
@@ -63,6 +68,9 @@ const operators = document.querySelectorAll('.operator')
 
 operators.forEach((operator) => {
     operator.addEventListener("click", (event) => {
+        if(isDone) {
+            isDone = false
+        }
         inputOperator(event.target.value)
         updateScreen(calcOperator)
         console.log("operator pressed")
