@@ -1,7 +1,7 @@
 .calculator {
     text-align: center;
     margin: 0 auto;
-    padding-top: 200px;
+    padding-top: 50px;
     width: 400px;
 }
 
@@ -63,14 +63,14 @@ button {
     color: white;
 }
 
-.equal-sign:hover {
+.equal-sign:active {
     background-color: darkorange;
 }
 
-.number:hover, .percentage:hover, .zero-btn:hover, .decimal:hover {
+.number:active, .percentage:active, .zero-btn:active, .decimal:active {
     background-color: #1d1c1c;
 }
 
-.operator:hover, .all-clear:hover, .one-clear:hover, .plus-minus:hover{
+.operator:active, .all-clear:active, .one-clear:active, .plus-minus:active{
     background-color: darkgray;
 }
